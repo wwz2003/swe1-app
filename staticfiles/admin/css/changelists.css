@@ -6,15 +6,15 @@
     width: 100%;
 }
 
-#changelist .changelist-form-container > div {
+#changelist .changelist-form-container>div {
     flex: 1 1 auto;
 }
 
-#changelist .changelist-form-container:not(:has(#changelist-filter)) > div {
+#changelist .changelist-form-container:not(:has(#changelist-filter))>div {
     width: 100%;
 }
 
-#changelist .changelist-form-container:has(#changelist-filter) > div {
+#changelist .changelist-form-container:has(#changelist-filter)>div {
     min-width: 0;
     max-width: calc(100% - 270px);
 }
@@ -23,7 +23,9 @@
     width: 100%;
 }
 
-.change-list .hiddenfields { display:none; }
+.change-list .hiddenfields {
+    display: none;
+}
 
 .change-list .filtered table {
     border-right: none;
@@ -33,7 +35,8 @@
     min-height: 400px;
 }
 
-.change-list .filtered .results, .filtered #toolbar,
+.change-list .filtered .results,
+.filtered #toolbar,
 .filtered div.xfull {
     width: auto;
 }
@@ -168,9 +171,9 @@
 }
 
 @media (forced-colors: active) {
-  #changelist-filter {
-      border: 1px solid;
-  }
+    #changelist-filter {
+        border: 1px solid;
+    }
 }
 
 #changelist-filter h2 {
@@ -189,25 +192,25 @@
     margin-bottom: 10px;
 }
 
-#changelist-filter details summary > * {
+#changelist-filter details summary>* {
     display: inline;
 }
 
-#changelist-filter details > summary {
+#changelist-filter details>summary {
     list-style-type: none;
 }
 
-#changelist-filter details > summary::-webkit-details-marker {
+#changelist-filter details>summary::-webkit-details-marker {
     display: none;
 }
 
-#changelist-filter details > summary::before {
+#changelist-filter details>summary::before {
     content: '→';
     font-weight: bold;
     color: var(--link-hover-color);
 }
 
-#changelist-filter details[open] > summary::before {
+#changelist-filter details[open]>summary::before {
     content: '↓';
 }
 
@@ -243,7 +246,8 @@
     color: var(--link-selected-fg);
 }
 
-#changelist-filter a:focus, #changelist-filter a:hover,
+#changelist-filter a:focus,
+#changelist-filter a:hover,
 #changelist-filter li.selected a:focus,
 #changelist-filter li.selected a:hover {
     color: var(--link-hover-color);
@@ -303,6 +307,7 @@
     #changelist tbody tr.selected {
         background-color: SelectedItem;
     }
+
     #changelist tbody tr:has(.action-select:checked) {
         background-color: SelectedItem;
     }
@@ -366,6 +371,7 @@
     color: var(--body-fg);
 }
 
-#changelist .actions .button:focus, #changelist .actions .button:hover {
+#changelist .actions .button:focus,
+#changelist .actions .button:hover {
     border-color: var(--body-quiet-color);
 }
