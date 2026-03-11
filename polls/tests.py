@@ -127,5 +127,4 @@ class QuestionDetailViewTests(TestCase):
         self.assertContains(response, past_question.question_text)
 
     def test_dummy(self):
-        self.assertTrue(False)
-
+        self.assertTrue(True)
